@@ -1,5 +1,5 @@
-# TEMPLATE
+# График полива цветов
 🟢RUN:<br>
 https://westerovs.github.com
 <br>
-<img src="cover.jpg">
+<img src="cover.png">
