@@ -1,5 +1,7 @@
 const templateRowPlants = (flower, isToday) => {
   const {name, interval, lastDate, nextDate} = flower
+
+  const viewFormatDate = isToday ? 'Сегодня' : `${ nextDate.day }.${ nextDate.month }.${ nextDate.year }`
   
   return `
     <tr class="table__row">
@@ -10,10 +12,8 @@ const templateRowPlants = (flower, isToday) => {
           <input type="date" class="last-date" value="${ lastDate }">
         </label>
       </td>
-      <td class="table__data table__data-input ${isToday ? 'watering-is-today' : ''}">
-         <label>
-          <input type="date" class="next-date" value="${ nextDate }">
-        </label>
+      <td class="table__data ${isToday ? 'watering-is-today' : ''}">
+         ${ viewFormatDate }
       </td>
     </tr>`
 }

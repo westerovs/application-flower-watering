@@ -13,7 +13,7 @@ const plants = [
   },
   {
     name    : 'Герань',
-    interval: 4,
+    interval: 9,
     lastDate: '2021-11-17',
     nextDate: ''
   },

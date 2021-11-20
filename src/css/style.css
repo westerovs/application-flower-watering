@@ -94,9 +94,31 @@ caption {
 }
 
 .watering-is-today {
-    background: red;
+    background: tomato;
+    font-weight: bold;
+    animation-name: isToday;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes isToday {
+    0% {
+        background: tomato;
+    }
+    50% {
+        background: gray;
+    }
+    100% {
+        background: tomato;
+    }
 }
 
 input {
     cursor: pointer;
+}
+
+input:disabled {
+    cursor: not-allowed;
+    opacity: 1;
 }
