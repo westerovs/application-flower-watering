@@ -6,11 +6,23 @@ const plants = [
     nextDate: ''
   },
   {
-    name    : 'Фикус',
-    interval: 5,
+    name    : 'Монстера Обликва',
+    interval: 3,
     lastDate: '2021-11-17',
     nextDate: ''
-  }
+  },
+  {
+    name    : 'Герань',
+    interval: 4,
+    lastDate: '2021-11-17',
+    nextDate: ''
+  },
+  {
+    name    : 'Хлорофитум ',
+    interval: 4,
+    lastDate: '2021-11-17',
+    nextDate: ''
+  },
 ]
 
 export {

@@ -93,6 +93,10 @@ caption {
     background: wheat;
 }
 
+.watering-is-today {
+    background: red;
+}
+
 input {
     cursor: pointer;
 }
