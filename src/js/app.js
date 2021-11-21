@@ -1,8 +1,12 @@
-import { getNextDate, render } from './utils/utils.js';
+import { getNextDate, getCurrentDay, render } from './utils/utils.js';
 import { templateRowPlants } from './view/view.js'
 import { plants } from './utils/const.js';
 
-const tableBody = document.querySelector('.table__tbody')
+const table = document.querySelector('.table')
+const tableBody = table.querySelector('.table__tbody')
+const currentDayField = table.querySelector('.table__current-day')
+
+currentDayField.innerHTML  = `${ getCurrentDay() }`
 
 const changeDate = () => {
   tableBody.addEventListener('change', function(event) {

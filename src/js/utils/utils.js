@@ -4,6 +4,15 @@ const render = (container, template, place = 'beforeend') => {
   }
 }
 
+const getCurrentDay = () => {
+  const currentDay = new Date()
+  const day = currentDay.getDate()
+  const month = currentDay.getMonth() + 1
+  const year = currentDay.getFullYear()
+  
+  return `${ day }.${ month }.${ year }`
+}
+
 const getNextDate = (lastDate, interval) => {
   const nextInterval = new Date(lastDate)
   nextInterval.setDate(nextInterval.getDate() + interval)
@@ -22,5 +31,6 @@ const getNextDate = (lastDate, interval) => {
 
 export {
   render,
-  getNextDate
+  getNextDate,
+  getCurrentDay
 }
