@@ -1,7 +1,7 @@
 const templateRowPlants = (flower, isToday) => {
   const {name, interval, lastDate, nextDate} = flower
 
-  const viewFormatDate = isToday ? 'Сегодня' : `${ nextDate.day }.${ nextDate.month }.${ nextDate.year }`
+  const viewFormatDate = isToday ? 'Сегодня' : `${ nextDate.peopleFormat() }`
   
   return `
     <tr class="table__row">

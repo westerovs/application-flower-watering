@@ -13,6 +13,10 @@ const getNextDate = (lastDate, interval) => {
     day: nextInterval.getDate(),
     month: nextInterval.getMonth() + 1,
     year: nextInterval.getFullYear(),
+    peopleFormat() {
+      return `${ this.day }.${ this.month }.${ this.year }`
+    }
+  
   }
 }
 
