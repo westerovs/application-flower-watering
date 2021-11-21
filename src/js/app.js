@@ -4,6 +4,21 @@ import { plants } from './utils/const.js';
 
 const tableBody = document.querySelector('.table__tbody')
 
+const changeDate = () => {
+  tableBody.addEventListener('change', function(event) {
+    const currentRow = event.target.closest('.table__row')
+    const nextDateField = currentRow.querySelector('.table__data--next')
+    const interval = currentRow.querySelector('.table__data--interval')
+    console.log(interval)
+    const lastDate = event.target.value
+    const nextDate = getNextDate(lastDate, 5)
+    console.log(lastDate)
+    
+    // nextDateField.innerHTML = lastDate.split('-').join('.')
+    // console.log(nextDate)
+  })
+}
+
 const renderRowPlants = () => {
   const today = new Date().toISOString().split('T')[0]
   
@@ -21,4 +36,5 @@ const renderRowPlants = () => {
 }
 
 renderRowPlants()
+changeDate()
 

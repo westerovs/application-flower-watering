@@ -4,8 +4,8 @@ const render = (container, template, place = 'beforeend') => {
   }
 }
 
-const getNextDate = (oldData, interval) => {
-  const nextInterval = new Date(oldData)
+const getNextDate = (lastDate, interval) => {
+  const nextInterval = new Date(lastDate)
   nextInterval.setDate(nextInterval.getDate() + interval)
   
   return {

@@ -20,7 +20,7 @@ const plants = [
   {
     name    : 'Хлорофитум ',
     interval: 4,
-    lastDate: '2021-11-17',
+    lastDate: '2021-11-21',
     nextDate: ''
   },
 ]

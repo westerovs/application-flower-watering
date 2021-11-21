@@ -6,13 +6,17 @@ const templateRowPlants = (flower, isToday) => {
   return `
     <tr class="table__row">
       <td class="table__data">${ name }</td>
-      <td class="table__data">${ interval }</td>
-      <td class="table__data table__data-input">
+      <td class="table__data table__data--interval">
+        <label>
+          <input type="number" data-interval="interval" value="${ interval }" min="1" max="30" maxlength="2">
+        </label>
+      </td>
+      <td class="table__data table__data--last">
         <label>
           <input type="date" class="last-date" value="${ lastDate }">
         </label>
       </td>
-      <td class="table__data ${isToday ? 'watering-is-today' : ''}">
+      <td class="table__data table__data--next ${isToday ? 'watering-is-today' : ''}">
          ${ viewFormatDate }
       </td>
     </tr>`

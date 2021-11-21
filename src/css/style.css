@@ -89,7 +89,15 @@ caption {
     text-align: center;
 }
 
-.table__data-input:hover {
+.table__data--interval input {
+    width: 60px;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+.table__data--last:hover {
     background: wheat;
 }
 
