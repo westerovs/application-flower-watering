@@ -8,12 +8,12 @@ const getWeekDay = (date, short = true) => {
   let days = null
 
   if (short) {
-    days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+    days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ']
   } else {
-    days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+    days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота']
   }
   
-  return days[date.getDay()];
+  return days[date.getDay()]
 }
 
 const getIsToday = (dateInputFormat) => {
@@ -41,12 +41,16 @@ const getCurrentDay = () => {
 
 const getNextDate = (lastDate, interval) => {
   const nextInterval = new Date(lastDate)
+  const dayWeek = getWeekDay(nextInterval)
+
   nextInterval.setDate(nextInterval.getDate() + interval)
+  const nextDayWeek = getWeekDay(nextInterval)
   
   return {
     inputFormat: nextInterval.toISOString().split('T')[0],
     day: nextInterval.getDate(),
-    dayWeek: getWeekDay(nextInterval),
+    dayWeek,
+    nextDayWeek,
     month: nextInterval.getMonth() + 1,
     year: nextInterval.getFullYear(),
     peopleFormat() {

@@ -34,6 +34,7 @@ const renderRowPlants = () => {
     const nextDate = getNextDate(item.lastDate, item.interval)
     item.nextDate = nextDate
     item.dayWeek = nextDate.dayWeek
+    item.nextDayWeek = nextDate.nextDayWeek
     
     getIsToday(nextDate.inputFormat)
     
