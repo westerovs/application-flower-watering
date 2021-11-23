@@ -7,7 +7,28 @@ const tableBody = table.querySelector('.table__tbody')
 const currentDayField = table.querySelector('.table__current-day')
 currentDayField.innerHTML  = `${ getCurrentDay() }`
 
+let a = 666
+localStorage.getItem(a);
+
+
+const caption = document.querySelector('caption');
+let isStorageSupport = true;
+let lastDay = '';
+
+try {
+  console.log(1)
+  lastDay = localStorage.getItem('adult');
+} catch (err) {
+  console.log(2)
+  isStorageSupport = false;
+}
+
 tableBody.addEventListener('change', function(event) {
+  if (lastDay) {
+    // caption.value = lastDay;
+    caption.innerHTML = lastDay;
+  }
+  
   const currentRow = event.target.closest('.table__row')
   const currentName = currentRow.dataset.name
   const nextDateField = currentRow.querySelector('.table__data--next')

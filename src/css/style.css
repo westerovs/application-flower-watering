@@ -51,6 +51,8 @@ img {
 
 .table {
     position: relative;
+    display: block;
+    width: min-content;
     margin: 50px auto;
     background: green;
     padding: 15px;
