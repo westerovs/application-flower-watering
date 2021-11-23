@@ -7,8 +7,10 @@ const tableBody = table.querySelector('.table__tbody')
 const currentDayField = table.querySelector('.table__current-day')
 currentDayField.innerHTML  = `${ getCurrentDay() }`
 
-let a = 666
-localStorage.getItem(a);
+localStorage.setItem('plants', JSON.stringify(plants))
+const localStPlants = JSON.parse(localStorage.getItem('plants'))
+
+
 
 
 const caption = document.querySelector('caption');
@@ -16,10 +18,9 @@ let isStorageSupport = true;
 let lastDay = '';
 
 try {
-  console.log(1)
   lastDay = localStorage.getItem('adult');
 } catch (err) {
-  console.log(2)
+  // console.log(2)
   isStorageSupport = false;
 }
 
