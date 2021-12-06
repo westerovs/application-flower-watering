@@ -10,9 +10,6 @@ currentDayField.innerHTML  = `${ getCurrentDay() }`
 localStorage.setItem('plants', JSON.stringify(plants))
 const localStPlants = JSON.parse(localStorage.getItem('plants'))
 
-
-
-
 const caption = document.querySelector('caption');
 let isStorageSupport = true;
 let lastDay = '';
@@ -64,4 +61,3 @@ const renderRowPlants = () => {
   })
 }
 renderRowPlants()
-
