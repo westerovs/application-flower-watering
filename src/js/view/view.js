@@ -1,5 +1,5 @@
 const templateRowPlants = (flower, isToday) => {
-  const {name, dayWeek, nextDayWeek, nameEng, interval, lastDate, nextDate} = flower
+  const {name, dayWeek, nextDayWeek, nameEng, interval, lastDate, nextDate, daysAgo} = flower
 
   const viewFormatDate = isToday ? 'Сегодня' : `${ nextDate.peopleFormat() }`
   
@@ -12,6 +12,7 @@ const templateRowPlants = (flower, isToday) => {
         </label>
       </td>
       <td class="table__data">${ dayWeek }</td>
+      <td class="table__data">${ daysAgo }</td>
       <td class="table__data table__data--last">
         <label>
           <input type="date" class="last-date" value="${ lastDate }">
