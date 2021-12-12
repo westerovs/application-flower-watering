@@ -5,7 +5,7 @@ const plants = [
     interval    : 3,
     dayWeek     : '',
     nextDayWeek : '',
-    lastDate    : '2021-11-22',
+    lastDate    : '2021-12-09',
     daysAgo     : '',
     nextDate    : '',
     transplanted: '2021-11-22',
