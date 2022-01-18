@@ -2,7 +2,7 @@ const plants = [
   {
     name        : 'Монстера Обликва',
     nameEng     : 'monstera_obliqua',
-    lastDate    : '2022-01-09',
+    lastDate    : '2022-01-16',
     interval    : 3,
     dayWeek     : '',
     nextDayWeek : '',
@@ -13,7 +13,7 @@ const plants = [
   {
     name        : 'Герань',
     nameEng     : 'geranium',
-    lastDate    : '2022-01-09',
+    lastDate    : '2022-01-16',
     interval    : 9,
     dayWeek     : '',
     nextDayWeek : '',
@@ -24,7 +24,7 @@ const plants = [
   {
     name        : 'Хлорофитум ',
     nameEng     : 'hlorophytum',
-    lastDate    : '2022-01-09',
+    lastDate    : '2022-01-16',
     interval    : 7,
     dayWeek     : '',
     nextDayWeek : '',
@@ -35,7 +35,7 @@ const plants = [
   {
     name        : 'Сингониум ',
     nameEng     : 'syngonium',
-    lastDate    : '2022-01-09',
+    lastDate    : '2022-01-16',
     interval    : 7,
     dayWeek     : '',
     nextDayWeek : '',
@@ -46,7 +46,7 @@ const plants = [
   {
     name        : 'Фиалка Small',
     nameEng     : 'violetSmall',
-    lastDate    : '2022-01-09',
+    lastDate    : '2022-01-16',
     interval    : 5,
     dayWeek     : '',
     nextDayWeek : '',
