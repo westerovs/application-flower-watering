@@ -37,6 +37,8 @@ class App {
   
   renderRowPlants = () => {
     plants.forEach(flower => {
+      if (!flower.available) return
+      
       const nextDate = getNextDate(flower.lastDate, flower.interval)
       const daysAgo = getDaysAgo(flower.lastDate)
       

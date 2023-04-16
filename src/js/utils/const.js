@@ -1,7 +1,8 @@
 const plants = [
   {
+    available   : true,
     name        : 'Монстера Обликва',
-    nameEng     : 'monstera_obliqua',
+    nameEng     : 'monsteraObliqua',
     lastDate    : '2022-02-19',
     interval    : 3,
     dayWeek     : '',
@@ -11,6 +12,7 @@ const plants = [
     transplanted: '2021-11-24',
   },
   {
+    available   : false,
     name        : 'Герань',
     nameEng     : 'geranium',
     lastDate    : '2022-02-19',
@@ -19,10 +21,10 @@ const plants = [
     nextDayWeek : '',
     daysAgo     : '',
     nextDate    : '',
-    // transplanted: '2022-01-27',
     transplanted: '2022-02-18',
   },
   {
+    available   : true,
     name        : 'Хлорофитум ',
     nameEng     : 'hlorophytum',
     lastDate    : '2022-02-19',
@@ -34,9 +36,10 @@ const plants = [
     transplanted: '2022-02-19',
   },
   {
+    available   : false,
     name        : 'Сингониум ',
     nameEng     : 'syngonium',
-    lastDate    : '2022-17-12',
+    lastDate    : '2022-02-19',
     interval    : 7,
     dayWeek     : '',
     nextDayWeek : '',
@@ -44,6 +47,31 @@ const plants = [
     nextDate    : '',
     transplanted: '',
   },
+  {
+    available   : true,
+    name        : 'Хамедорея Элеганс',
+    nameEng     : 'hamedoreaElegance',
+    lastDate    : '2022-12-12',
+    interval    : 2,
+    dayWeek     : '',
+    nextDayWeek : '',
+    daysAgo     : '',
+    nextDate    : '',
+    transplanted: '',
+  },
+  {
+    available   : true,
+    name        : 'Фикус',
+    nameEng     : 'ficus',
+    lastDate    : '2022-12-12',
+    interval    : 2,
+    dayWeek     : '',
+    nextDayWeek : '',
+    daysAgo     : '',
+    nextDate    : '',
+    transplanted: '',
+  },
+  
 ]
 
 export {
