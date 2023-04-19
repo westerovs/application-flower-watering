@@ -58,7 +58,6 @@ const getDaysAgo = (date) => {
   const lastDate = date // '2021-12-05'
   let currentDate = Date.parse(new Date());
   let days = (currentDate - Date.parse(date)) / 86400000;   //86400000 - ms в дне
-  console.log(Math.floor(days))
   return Math.floor(days)
 }
 

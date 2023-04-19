@@ -48,6 +48,7 @@ class App {
       flower.daysAgo = daysAgo
       
       getIsToday(nextDate.inputFormat)
+      
       render(this.tableBody, templateRowPlants(flower, getIsToday(nextDate.inputFormat)))
     })
   }
