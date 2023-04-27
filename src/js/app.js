@@ -1,7 +1,7 @@
 import { render } from './utils/utils.js'
 import { getNextDate, getCurrentDay, getIsToday, getDaysAgo } from './utils/days.js'
 import { templateRowPlants } from './view/view.js'
-import { plants } from './utils/const.js'
+import { plants } from './utils/plants.js'
 
 // временно тут вся логика
 class App {
