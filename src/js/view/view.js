@@ -10,9 +10,9 @@ const templateRowPlants = (flower, isToday) => {
         <img width="150x150" height="150x150" src="./src/images/${nameEng}.jpg" alt="${nameEng}"/>
       </td>
       <td class="table__data table__data--interval">
-          ${interval} дней
+          ${interval}
       </td>
-      <td class="table__data">${daysAgo}</td>
+      <td class="table__data">${(daysAgo === 0) ? 'сегодня' : daysAgo }</td>
       <td class="table__data table__data--last">
         <label>
           <input type="date" class="last-date" value="${ lastDate }">
