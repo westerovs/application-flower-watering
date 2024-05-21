@@ -1,27 +1,26 @@
 const templateRowPlants = (flower, isToday) => {
-  const {name, dayWeek, nextDayWeek, nameEng, interval, lastDate, nextDate, daysAgo} = flower
+  const {name, nextDayWeek, nameEng, interval, lastDate, nextDate, daysAgo, } = flower
 
   const viewFormatDate = isToday ? 'Сегодня' : `${ nextDate.peopleFormat() }`
-  
+
   return `
     <tr class="table__row" data-name="${ nameEng }">
-      <td class="table__data">${ name }</td>
-      <td class="table__data table__data--interval">
-        <label>
-          <input type="number" data-interval="interval" value="${ interval }" min="1" max="99" maxlength="2">
-        </label>
+      <td class="table__data">
+        <p>${ name }</p>
+        <img width="150x150" height="150x150" src="./src/images/${nameEng}.jpg" alt="${nameEng}"/>
       </td>
-      <td class="table__data">${ dayWeek }</td>
-      <td class="table__data">${ daysAgo }</td>
+      <td class="table__data table__data--interval">
+          ${interval} дней
+      </td>
+      <td class="table__data">${daysAgo}</td>
       <td class="table__data table__data--last">
         <label>
           <input type="date" class="last-date" value="${ lastDate }">
         </label>
       </td>
       <td class="table__data table__data--next ${isToday ? 'watering-is-today' : ''}">
-         ${ viewFormatDate }
+         ${ viewFormatDate } <span class="next-date-span">${nextDayWeek}</span>
       </td>
-      <td class="table__data">${ nextDayWeek }</td>
     </tr>`
 }
 

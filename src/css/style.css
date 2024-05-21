@@ -33,7 +33,7 @@ li {
 
 img {
   display: block;
-  max-width: 100%;
+  /*max-width: 100%;*/
   height: auto;
 }
 
@@ -99,13 +99,8 @@ caption {
 
 .table__data {
   padding: 5px 10px;
-  height: 20px;
   color: #000444;
   text-align: center;
-}
-
-.table__data--interval input {
-  width: 60px;
 }
 
 input {
@@ -118,7 +113,6 @@ label {
   height: 100%;
 }
 
-.table__data--interval:hover,
 .table__data--last:hover {
   background: wheat;
 }
@@ -151,4 +145,8 @@ input {
 input:disabled {
   cursor: not-allowed;
   opacity: 1;
+}
+
+.next-date-span {
+  font-size: 14px;
 }
