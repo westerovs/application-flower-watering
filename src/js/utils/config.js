@@ -3,7 +3,7 @@ const config = [
     available   : true,
     name        : 'Сингониум ',
     nameEng     : 'syngonium',
-    lastDate    : '2024-05-21',
+    lastDate    : '2024-05-28',
     interval    : 7,
     nextDayWeek : '',
     daysAgo     : '',
