@@ -3,7 +3,7 @@ const config = [
     available   : true,
     name        : 'Сингониум ',
     nameEng     : 'syngonium',
-    lastDate    : '2024-05-28',
+    lastDate    : '2024-07-08',
     interval    : 7,
     nextDayWeek : '',
     daysAgo     : '',
@@ -14,7 +14,7 @@ const config = [
     available   : true,
     name        : 'Хлорофитум ',
     nameEng     : 'hlorophytum',
-    lastDate    : '2024-06-01',
+    lastDate    : '2024-07-08',
     interval    : 4,
     nextDayWeek : '',
     daysAgo     : '',
@@ -25,7 +25,7 @@ const config = [
     available   : true,
     name        : 'Растения на полке ',
     nameEng     : 'all',
-    lastDate    : '2024-05-26',
+    lastDate    : '2024-07-08',
     interval    : 7,
     nextDayWeek : '',
     daysAgo     : '',
@@ -36,7 +36,7 @@ const config = [
     available   : true,
     name        : 'Последний цветок сверху ',
     nameEng     : 'all',
-    lastDate    : '2024-06-01',
+    lastDate    : '2024-07-08',
     interval    : 7,
     nextDayWeek : '',
     daysAgo     : '',
@@ -44,20 +44,6 @@ const config = [
     transplanted: null,
   },
 
-
-
-  // ↓ empty ↓
-  {
-    available   : false,
-    name        : 'Монстера Обликва',
-    nameEng     : 'monsteraObliqua',
-    lastDate    : '2023-05-07',
-    interval    : 2,
-    nextDayWeek : '',
-    daysAgo     : '',
-    nextDate    : '',
-    transplanted: '2021-11-24',
-  },
 ]
 
 export {
